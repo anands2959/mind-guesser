@@ -9,7 +9,7 @@ export default function Home() {
     {
       role: "model",
       content:
-        "Think of something (human, animal, place and non-living object). Ready? Let's start. Is it living?",
+        "Think of something (human, animal, place and non-living object). Ready? Let\'s start. Is it living?",
     },
   ]);
   const [isUndoAvailable, setIsUndoAvailable] = useState(false);
@@ -41,7 +41,7 @@ export default function Home() {
       {
         role: "model",
         content:
-          "Think of something (human, animal, place and non-living object). Ready? Let's start. Is it living?",
+          "Think of something (human, animal, place and non-living object). Ready? Let\'s start. Is it living?",
       },
     ]);
     setIsUndoAvailable(false);
@@ -84,7 +84,7 @@ export default function Home() {
               🤯 Mind Guesser
             </h1>
             <p className="text-center text-gray-500 mt-1 text-sm">
-              Answer with <b>Yes</b>, <b>No</b>, <b>Don't know</b>,{" "}
+              Answer with <b>Yes</b>, <b>No</b>, <b>Don&apos;t know</b>,{" "}
               <b>Probably</b>, or <b>Probably not</b>.
             </p>
           </div>
