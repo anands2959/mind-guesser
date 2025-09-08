@@ -9,7 +9,7 @@ export default function Home() {
     {
       role: "model",
       content:
-        "Think of something (human, animal, place and non-living object). Ready? Let\'s start. Is it living?",
+        "Think of something (human, animal, place). Ready? Let\'s start.",
     },
   ]);
   const [isUndoAvailable, setIsUndoAvailable] = useState(false);
@@ -41,7 +41,7 @@ export default function Home() {
       {
         role: "model",
         content:
-          "Think of something (human, animal, place and non-living object). Ready? Let\'s start. Is it living?",
+          "Think of something (human, animal, place). Ready? Let\'s start.",
       },
     ]);
     setIsUndoAvailable(false);
@@ -67,7 +67,6 @@ export default function Home() {
         {/* Left Section with Picture */}
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-emerald-500 to-green-700 p-6">
           <Image
-       
             src="/logo.png"
             width={400}
             height={500}
