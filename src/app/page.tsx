@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 const options = ["Yes", "No", "Don't know", "Probably", "Probably not"];
@@ -65,10 +66,13 @@ export default function Home() {
       <div className="w-full max-w-6xl bg-white rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-2 overflow-hidden">
         {/* Left Section with Picture */}
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-emerald-500 to-green-700 p-6">
-          <img
-            src="logo.png"
+          <Image
+       
+            src="/logo.png"
+            width={400}
+            height={500}
             alt="Mind Guess Illustration"
-            className="w-3/4 drop-shadow-xl"
+            className=" drop-shadow-xl"
           />
         </div>
 
