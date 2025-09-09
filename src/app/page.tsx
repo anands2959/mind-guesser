@@ -54,11 +54,11 @@ export default function Home() {
     const updated = [...messages];
     const lastUserIndex = updated.findLastIndex((m) => m.role === "user");
     if (lastUserIndex !== -1) {
-      updated.splice(lastUserIndex); // remove everything after last user
+      updated.splice(lastUserIndex); 
       setMessages(updated);
     }
 
-    setIsUndoAvailable(false); // allow only one undo at a time
+    setIsUndoAvailable(false); 
   };
 
   return (
@@ -88,7 +88,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Chat Area (scrolls only this box) */}
+          {/* Chat Area */}
           <div className="flex-1 min-h-[400px] max-h-[400px] overflow-y-auto border rounded-lg p-4 bg-gray-50 mb-4">
             {messages.map((m, i) => (
               <div
